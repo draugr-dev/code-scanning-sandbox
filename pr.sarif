@@ -1,0 +1,46 @@
+{
+ "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+ "version": "2.1.0",
+ "runs": [
+  {
+   "tool": {
+    "driver": {
+     "name": "Draugr",
+     "informationUri": "https://draugr.dev",
+     "rules": [
+      {
+       "id": "SBX-5",
+       "shortDescription": {
+        "text": "SBX-5"
+       }
+      }
+     ]
+    }
+   },
+   "results": [
+    {
+     "ruleId": "SBX-5",
+     "level": "error",
+     "message": {
+      "text": "sandbox finding SBX-5"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "added.txt"
+        },
+        "region": {
+         "startLine": 1
+        }
+       }
+      }
+     ],
+     "partialFingerprints": {
+      "draugrFindingHash/v1": "fp-pr-5"
+     }
+    }
+   ]
+  }
+ ]
+}
